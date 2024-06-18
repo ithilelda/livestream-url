@@ -13,7 +13,12 @@ async function get_h5_url(room_number, rate=0) {
     const tt = Math.floor(Date.now() / 1000);
     const query_param = eval(req_js.textContent + `ub98484234(${room_number},"${did}",${tt});`) + `&cdn=ws-h5&rate=${rate}`;
     const url_res = await fetch(`https://www.douyu.com/lapi/live/getH5Play/${room_number}?${query_param}`);
-    return await url_res.json();
+    const url_json = await url_res.json();
+    if (url_json.error === 0) {
+        return url_json.data.rtmp_url + "/" + url_json.data.rtmp_live;
+    } else {
+        return null;
+    }
 }
 
 module.exports = {
