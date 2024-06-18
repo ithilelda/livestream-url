@@ -1,15 +1,19 @@
 {
   "name": "live_url",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "live_url": "index.js"
   },
   "keywords": [],
   "author": "ithilelda",
   "license": "MIT",
   "description": "",
   "dependencies": {
+    "commander": "^12.1.0",
     "crypto-js": "^4.2.0",
     "node-html-parser": "^6.1.13"
   }
