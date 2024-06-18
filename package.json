@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "ithilelda",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "node-html-parser": "^6.1.13"
+  }
 }

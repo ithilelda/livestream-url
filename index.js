@@ -1,8 +1,10 @@
 const bilibili = require('./bilibili');
+const douyu = require('./douyu');
 
 
 module.exports = {
   bilibili,
+  douyu,
 };
 
-bilibili.get_live_urls(111).then(console.log);
+douyu.get_h5_url(88660).then(console.log);
