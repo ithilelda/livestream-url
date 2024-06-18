@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const bilibili = require('./bilibili');
 const douyu = require('./douyu');
 const { Command } = require('commander');
